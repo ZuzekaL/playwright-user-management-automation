@@ -1,0 +1,28 @@
+{
+  "name": "playwright-user-management-automation",
+  "version": "1.0.0",
+  "description": "This project implements automated end-to-end testing of a web application's user management functionality using **Playwright, TypeScript and the Page Object Model (POM)** design pattern.",
+  "main": "index.js",
+  "directories": {
+    "doc": "docs"
+  },
+  "scripts": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ZuzekaL/playwright-user-management-automation.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/ZuzekaL/playwright-user-management-automation/issues"
+  },
+  "homepage": "https://github.com/ZuzekaL/playwright-user-management-automation#readme",
+  "devDependencies": {
+    "@playwright/test": "^1.65.1",
+    "@types/node": "^26.6.6",
+    "allure": "^0.0.0",
+    "allure-playwright": "^3.14.0"
+  }
+}

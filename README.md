@@ -128,7 +128,7 @@ The automation will cover the following workflow:
 
 ## Running the Tests
 
-Run all tests:
+Runs the end-to-end tests:
 
 ```bash
 npx playwright test
@@ -142,10 +142,21 @@ npx playwright test --headed
 Run tests in UI mode (interactive)
 
 ```bash
-npm run test:ui
+npx playwright test --ui
+```
+
+Run tests in debug mode:
+
+```bash
+npx playwright test --debug
 ```
 
 # Run tests in specific browser
+
+```bash
+npx playwright test --project=chromium
+```
+Runs the tests only on Desktop Chrome.
 npm run test:chrome      # Chromium only
 npm run test:firefox     # Firefox only
 npm run test:webkit      # Safari only
