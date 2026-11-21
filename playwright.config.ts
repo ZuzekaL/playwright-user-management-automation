@@ -37,6 +37,7 @@ export default defineConfig({
     ['list'],
     ['html', {
       outputFolder: 'playwright-report',
+      //open: process.env.CI ? 'never' : 'always',
       open: 'never',
     }],
     ['allure-playwright', {

@@ -72,6 +72,9 @@ Install the dependencies:
 
 ```bash
 npm install -D @playwright/test typescript @types/node allure-playwright allure
+
+Allure Report
+npm install -D allure@latest
 ```
 
 ## Project Structure
@@ -131,30 +134,30 @@ The automation will cover the following workflow:
 Runs the end-to-end tests:
 
 ```bash
-npx playwright test
+npm test
 ```
 
 Run tests in headed mode:
 
 ```bash
-npx playwright test --headed
+npm run test:headed
 ```
 Run tests in UI mode (interactive)
 
 ```bash
-npx playwright test --ui
+npm run test:ui
 ```
 
 Run tests in debug mode:
 
 ```bash
-npx playwright test --debug
+npm run test:debug
 ```
 
 # Run tests in specific browser
 
 ```bash
-npx playwright test --project=chromium
+npm run test:chromium
 ```
 Runs the tests only on Desktop Chrome.
 npm run test:chrome      # Chromium only
@@ -166,19 +169,23 @@ Run a specific test file:
 ```bash
 npx playwright test tests/user-management.spec.ts
 ```
+View the Playwright HTML report
 
+```bash
+npm run report:playwright
+```
 ## Allure Reporting
 
 Generate the Allure report:
 
 ```bash
-npx allure generate allure-results --clean -o allure-report
+npm run allure:generate
 ```
 
 Open the report:
 
 ```bash
-npx allure open allure-report
+npm run allure:open
 ```
 
 ## CI/CD Pipeline

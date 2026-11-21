@@ -9,3 +9,20 @@ node_modules/
 
 # IDE
 .idea/
+
+# Playwright generated files
+test-results/
+playwright-report/
+
+# Allure generated files
+allure-results/
+allure-report/
+
+# Environment variables
+.env
+.env.*
+!.env.example
+
+# Operating system files
+.DS_Store
+Thumbs.db
